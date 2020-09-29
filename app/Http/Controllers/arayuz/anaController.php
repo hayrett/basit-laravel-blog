@@ -22,6 +22,7 @@ class anaController extends Controller {
     }
     view() -> share('sayfalar', Sayfa::where('durumu', 1) -> orderBy('sirasi', 'ASC') -> get());
     view() -> share('kategoriler', Kategori::where('durumu', 1) -> orderBy('adi', 'ASC') -> get());
+    view() -> share('siteBilgileri', Ayar::find(1));
   }
 
   public function ana(){

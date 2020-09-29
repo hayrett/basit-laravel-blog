@@ -14,7 +14,7 @@ class Makaleler extends Migration {
       $tablo -> string('url_adresi');
       $tablo -> bigInteger('kategorisi') -> unsigned();
       $tablo -> integer('tiklanma') -> default(0);
-      $tablo -> integer('durumu') -> default(0) -> comment('0-> Yayında değil, 1-> Yayında');
+      $tablo -> integer('durumu') -> default(1) -> comment('0-> Yayında değil, 1-> Yayında');
       $tablo -> softDeletes('silindi');
       $tablo -> dateTime('olusturuldu');
       $tablo -> dateTime('degistirildi');

@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\DB;
 class yoneticiSeeder extends Seeder {
   public function run() {
     DB::table('yonetici') -> insert([
-      'adi' => 'Hayrettin KK',
-      'eposta' => 'hayrett@yaani.com',
+      'adi' => 'Yönetici',
+      'eposta' => 'blog@blog.com',
       'sifre' => bcrypt(112233)
     ]);
   }

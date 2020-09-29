@@ -23,7 +23,7 @@
       </div>
       @if(!$loop -> last) <hr> @endif
     @endforeach
-    <div class="col-md-3 text-center">
+    <div class="text-center">
       {{$makaleler ->  links()}}
     </div>
   @else

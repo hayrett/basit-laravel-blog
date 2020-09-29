@@ -11,7 +11,7 @@
           @foreach($sosyal as $sos)
             @if($siteBilgileri -> $sos != null)
               <li class="list-inline-item">
-                <a target="_blank" href="{{$siteBilgileri -> $sos}}">
+                <a target="_blank" href="http://www.{{$sos}}.com/{{$siteBilgileri -> $sos}}">
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-{{$sos}} fa-stack-1x fa-inverse"></i>
